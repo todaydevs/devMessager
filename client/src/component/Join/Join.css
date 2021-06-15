@@ -1,0 +1,63 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #010213;
+}
+.be-join-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 88vh;
+}
+.be-join {
+  text-align: center;
+  color: #fff;
+}
+.be-input {
+  min-width: 300px;
+  padding: 18px;
+}
+.be-mt-20 {
+  margin-top: 20px;
+}
+.be-btn {
+  width: 100%;
+  padding: 18px;
+  background: #00ccff;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+.be-h1{
+  position: relative;
+}
+.be-h1::before{
+  content: "";
+  position: absolute;
+  width: 18%;
+  left: 0;
+  top: 51%;
+  z-index: -1;
+  height: 2px;
+  background: #fff;
+}
+.be-h1::after{
+  content: "";
+  position: absolute;
+  width: 18%;
+  right: 0;
+  top: 51%;
+  z-index: -1;
+  height: 2px;
+  background: #fff;
+}
+.be-p {
+  
+}
