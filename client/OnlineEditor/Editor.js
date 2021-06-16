@@ -36,6 +36,6 @@ new Editor(Code,Mode).run()
 Btn = document.getElementById("btn");
 Console = document.getElementById("console");
 
-btn.onclick = function(){
+Btn.onclick = function(){
      Console.textContent = result;
     }
