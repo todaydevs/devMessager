@@ -1,28 +1,41 @@
 //devMessager
-//Online Editor
-//main compilation(Javascript, python)
+//Online Javascript/Evaluator Editor
 
-let setMode = null;
+let setMode = null,result,Console,Mode,Code
 
-class Editor{
-     constructor(input,mode) {
-          this.input = input;
-          if(!(mode)){
-                 this.setMode = setMode;
-                }
-              }
+cass Editor{
+   constructor(input, mode){
+      this.input = input;
 
-     run(){
-        console log('not yet implemented');
+      if(!(mode)){
+          this.mode = setMode;
+          }
+      this.mode = mode;
+    }
+
+  run(){
+       if(!(this.mode)){
+         throw  new Error('mode not set');
         }
-      }
 
-//get source
-let source = document.querySelector("#editor");
+      if(this.mode =="JavaScript"){
+         result = new String(eval(this.input));
+       }
+     }
 
-//Run Source
-//
-//
-let console = document.querySelector("#console")
-   ,getSource = new Editor(source.value)
-   ,compileSource = getSource.run();
+//get code
+Code = document.getElementById("code").value;
+
+//get mode
+Mode = document.getElementById("mode").value;
+
+//initialize && run Editor
+new Editor(Code,Mode).run()
+
+
+Btn = document.getElementById("btn");
+Console = document.getElementById("console");
+
+btn.onclick = function(){
+     Console.textContent = result;
+    }
