@@ -7,6 +7,7 @@ body {
   padding: 0;
   background: #010213;
 }
+
 .be-join-container{
   display: flex;
   justify-content: center;
@@ -15,17 +16,21 @@ body {
   width: 100%;
   min-height: 88vh;
 }
+
 .be-join {
   text-align: center;
   color: #fff;
 }
+
 .be-input {
   min-width: 300px;
   padding: 18px;
 }
+
 .be-mt-20 {
   margin-top: 20px;
 }
+
 .be-btn {
   width: 100%;
   padding: 18px;
@@ -35,9 +40,11 @@ body {
   border-radius: 5px;
   color: #fff;
 }
+
 .be-h1{
   position: relative;
 }
+
 .be-h1::before{
   content: "";
   position: absolute;
@@ -48,6 +55,7 @@ body {
   height: 2px;
   background: #fff;
 }
+
 .be-h1::after{
   content: "";
   position: absolute;
@@ -58,6 +66,7 @@ body {
   height: 2px;
   background: #fff;
 }
+
 .be-p {
   
 }

@@ -16,7 +16,7 @@ const Join = () => {
        <Link to={`/chat`}>
          <button className="be-btn be-mt-20" type="submit">Sign in</button>
        </Link>
-       <p className="be-p">Build by todaysdev developers</p>
+       <p className="be-p">Proudly Developed by Todaysdevs Developers</p>
      </div>
     </div>
     )
