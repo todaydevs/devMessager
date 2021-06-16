@@ -1,9 +1,9 @@
 //devMessager
 //Online Javascript/Evaluator Editor
 
-let setMode = null,result,Console,Mode,Code
+let setMode = null,Result,Console,Mode,Code
 
-cass Editor{
+class Editor{
    constructor(input, mode){
       this.input = input;
 
@@ -19,7 +19,7 @@ cass Editor{
         }
 
       if(this.mode =="JavaScript"){
-         result = new String(eval(this.input));
+         Result = new String(eval(this.input));
        }
      }
 
@@ -37,5 +37,5 @@ Btn = document.getElementById("btn");
 Console = document.getElementById("console");
 
 Btn.onclick = function(){
-     Console.textContent = result;
+     Console.textContent = Result;
     }
